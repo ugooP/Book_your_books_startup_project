@@ -1,21 +1,25 @@
-function sendEmail() {
+document.querySelector('#send-mail-btn').addEventListener('click', (event) => {
     event.preventDefault()
 
     // Get user inputs
     const params = {
-        fromName: document.querySelector('#from-name').value,
-        fromMail: document.querySelector('#from-mail').value,
+        fromName: document.querySelector('#nameInput').value,
+        fromMail: document.querySelector('#emailInput').value,
         message: document.querySelector('#message').value
     }
 
-    const options = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(params)
-    }
+    // Set the IDs
+    const SERVICE_ID = 'service_ybm82im'
+    const TEMPLATE_ID = 'template_bl9e5q7'
+    const USER_ID = 'user_fKOFTHNVkZuzqNqHfz7Yw'
 
-    fetch('/', options).then(() => console.log('Email envoyé'))
-}
+    // Check if inputs are valid
+    if (isInputsValid(params)) {
+        // Send email
+        emailjs.send(SERVICE_ID, TEMPLATE_ID, params, USER_ID)
+        .then(() => successMsg('Email envoyé'))
+    }
+})
 
 function isInputsValid(params) {
     const emailRegexp = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
@@ -24,7 +28,7 @@ function isInputsValid(params) {
         errorMsg('Nom trop court')
         return false
     } else if (!emailRegexp.test(params.fromMail)) {
-        errorMsg('Email invalide');
+        errorMsg('Email invalide')
         return false
     } else if (params.message.length < 5) {
         errorMsg('Message trop court')
