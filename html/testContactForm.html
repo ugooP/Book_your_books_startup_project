@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+</head>
+<body>
+    <form id="contact-form">
+        <input type="text"id="from-name" placeholder="name">
+        <input type="text" id="from-mail" placeholder="email">
+        <textarea placeholder="message" id="message"></textarea>
+        <input type="submit" onclick="sendEmail()">
+    </form>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="../js/sendEmail.js"></script>
+</body>
+</html>

@@ -1,1 +1,1 @@
-# FPI - ESIEE-IT startup project 2021
+# Formation Pour L'innovation - ESIEE-IT startup project 2021
