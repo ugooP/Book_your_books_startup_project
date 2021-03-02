@@ -8,6 +8,23 @@ body {
 }
 
 
+/* CONTACT SECTION */
+.contact-title-container {
+    margin-left: 10%;
+    margin-top: 5vh;
+}
+.contact-title-container h2 {
+    font-size: 30px;
+    margin: 0;
+}
+.contact-title-container span {
+    color: #586B48;
+}
+.contact-title-container p {
+    font-size: 13px;
+    margin: 0;
+    color: #586B48;
+}
 
 /* CONTACT FORM */
 #contact-form-container {
@@ -20,39 +37,74 @@ body {
 #contact-form-container form {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
+}
+#contact-form {
+    position: relative;
 }
 form input, form textarea {
     outline: none;
     padding: 8px;
-    border-radius: 10px;
-    border: 2px solid #586B48;
+    border: none;
     background: none;
-    margin: 5px 0;
     font-family: 'poppins';
     resize: vertical;
 }
 form button {
-    background-color: #586B58;
+    background-color: #586B48;
     border: none;
     outline: none;
-    padding: 10px 15px;
-    margin: 5px 0;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-family: 'poppins';
     border-radius: 50px;
-    font-size: 17px;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
     width: fit-content;
     align-self: flex-end;
     cursor: pointer;
 }
+form label {
+    position: absolute;
+    top: -9px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 17px;
+    margin-bottom: -16px;
+    padding: 0 3px;
+    height: 16px;
+    background-color: white;
+    color: #586B48;
+}
+.form-group {
+    border: 2px solid #586B48;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
 .form-contact-inputs {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.form-contact-inputs input {
-    width: 47%;
+.form-contact-inputs div {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+.form-contact-inputs div:first-of-type {
+    margin-right: 4%;
+}
+.textarea-container {
+    display: flex;
+    flex-direction: column;
+}
+.textarea-container label {
+    top: 49px;
 }
 #message {
     height: 180px;
+}
+.infoMsg {
+    font-size: 13px;
+    align-self: center;
 }

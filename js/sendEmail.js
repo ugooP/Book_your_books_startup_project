@@ -1,3 +1,8 @@
+const nameInput = document.querySelectorAll('#contact-form input')[0]
+const mailInput = document.querySelectorAll('#contact-form input')[1]
+const messageArea = document.querySelector('#contact-form textarea')
+const infoMsg = document.querySelector('.infoMsg')
+
 document.querySelector('#send-mail-btn').addEventListener('click', (event) => {
     event.preventDefault()
 
@@ -15,9 +20,15 @@ document.querySelector('#send-mail-btn').addEventListener('click', (event) => {
 
     // Check if inputs are valid
     if (isInputsValid(params)) {
+        infoMsg.innerHTML = ''
         // Send email
         emailjs.send(SERVICE_ID, TEMPLATE_ID, params, USER_ID)
-        .then(() => successMsg('Email envoyé'))
+        .then(() => {
+            successMsg('Email envoyé')
+            nameInput.value = ''
+            mailInput.value = ''
+            messageArea.value = ''
+        })
     }
 })
 
@@ -25,7 +36,7 @@ function isInputsValid(params) {
     const emailRegexp = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
 
     if (params.fromName.length < 3) {
-        errorMsg('Nom trop court')
+        errorMsg('Nom prénom trop court')
         return false
     } else if (!emailRegexp.test(params.fromMail)) {
         errorMsg('Email invalide')
@@ -39,9 +50,15 @@ function isInputsValid(params) {
 }
 
 function errorMsg(msg) {
-    console.warn(msg);
+    infoMsg.innerHTML = msg
+    infoMsg.style.color = 'red'
 }
 
 function successMsg(msg) {
-    console.log(msg)
+    infoMsg.innerHTML = msg
+    infoMsg.style.color = 'green'
+    setTimeout(() => {
+        infoMsg.innerHTML = ''
+    }, 5000)
 }
+

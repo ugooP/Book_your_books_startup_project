@@ -16,13 +16,17 @@
         <header>
             <img src="img/FPI_logo.png" alt="Logo FPI">
             <ul>
-                <li><a href="">Accueil</a></li>
+                <li><a href="#home-section">Accueil</a></li>
                 <li><a href="">Qui sommes-nous</a></li>
                 <li><a href="">Nos valeurs</a></li>
                 <li><a href="">Prestations</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#contact-section">Contact</a></li>
             </ul> 
         </header>
+
+        <div id="home-section">
+
+        </div>
         
         <div class="exigence">
             <p>
@@ -57,17 +61,34 @@
 
         </div>
 
-        <div id="contact-form-container">
-            <form id="contact-form">
-                <div class="form-contact-inputs">
-                    <input type="text" id="nameInput" placeholder="Nom prénom">
-                    <input type="text" id="emailInput" placeholder="Email">
-                </div>
-                <textarea id="message" placeholder="Parlez-nous en détails de votre projet"></textarea>
-                <button id="send-mail-btn">Envoyer mon message</button>
-                <p id="infoMsg"></p>
-            </form>
+        <div id="contact-section">
+            <div class="contact-title-container">
+                <h2>Nous <span>contacter</span></h2>
+                <p>Vous souhaitez nous contacter pour une formation<br>ou une prestation de conseil ?</p>
+            </div>
+
+            <div id="contact-form-container">
+                <form id="contact-form">
+                    <div class="form-contact-inputs">
+                        <div class="form-group">
+                            <label>Nom prénom</label>
+                            <input type="text" id="nameInput">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" id="emailInput">
+                        </div>
+                    </div>
+                    <div class="textarea-container form-group">
+                        <label>Message</label>
+                        <textarea id="message" placeholder="Parlez-nous de votre projet"></textarea>
+                    </div>
+                    <button id="send-mail-btn">Envoyer mon message</button>
+                    <p class="infoMsg"></p>
+                </form>
+            </div>
         </div>
+
 
         <footer>
             <img src="img/FPI_logo.png" alt="Logo FPI" class="logo_fpi">

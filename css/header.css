@@ -6,6 +6,7 @@ header {
     justify-content: space-between;
     position: fixed;
     top: 0;
+    box-shadow: 0 2px 20px #00000033;
 }
 header img {
     height: 100%;
