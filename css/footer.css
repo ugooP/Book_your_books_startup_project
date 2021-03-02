@@ -1,0 +1,23 @@
+footer {
+    background-color: #586B48;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+}
+footer .logo_fpi {
+    height: 100%;
+}
+footer .reseaux-sociaux-container img {
+    height: 40px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+footer .copyrights {
+    margin-right: 70px;
+}
+footer .copyrights p {
+    text-align: right;
+    font-size: 13px;
+}
