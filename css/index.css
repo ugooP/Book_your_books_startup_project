@@ -1,5 +1,7 @@
-/* COLOR PALETTE */
-/*  */
+/* COLOR PALETTE
+BLUE : #4EADAD
+DARK GREY : #262C2B
+*/
 
 html {
     scroll-behavior: smooth;
@@ -25,6 +27,63 @@ body {
     font-size: 13px;
     margin: 0;
     color: #586B48;
+}
+
+/* HOME SECTION */
+#home-section {
+    height: 95vh;
+}
+
+/* CAROUSEL SECTION */
+.carousel {
+    height: 100%;
+    display: flex;
+    overflow: scroll;
+    flex-wrap: nowrap;
+}
+.carousel-item {
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: #262C2B;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10%;
+}
+.carousel-item h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+.carousel-item span {
+    color: #4EADAD;
+}
+.carousel-item p {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: white;
+}
+.carousel-item .btns a {
+    background-color: #4EADAD;
+    text-decoration: none;
+    border: 2px solid #4EADAD;
+    outline: none;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-family: 'poppins';
+    border-radius: 50px;
+    color: white;
+    font-weight: 500;
+    width: fit-content;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.carousel-item .btns a:last-of-type {
+    background-color: transparent;
+    margin-left: 1%;
 }
 
 
