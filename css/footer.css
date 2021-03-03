@@ -9,10 +9,12 @@ footer {
 footer .logo_fpi {
     height: 100%;
 }
-footer .reseaux-sociaux-container img {
-    height: 40px;
-    margin: 0 10px;
-    vertical-align: middle;
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+    text-decoration: underline;
 }
 footer .copyrights {
     margin-right: 70px;

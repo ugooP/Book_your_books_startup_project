@@ -26,7 +26,7 @@ body {
 .title-container p {
     font-size: 13px;
     margin: 0;
-    color: #586B48;
+    color: #4EADAD;
 }
 
 /* HOME SECTION */
@@ -87,7 +87,6 @@ body {
 .carousel-item:nth-child(4) {
     background-color: white;
 }
-
 .carousel-item h1 {
     margin: 0;
     font-size: 50px;
@@ -111,7 +110,7 @@ body {
     padding: 8px 18px;
     font-size: 15px;
     font-family: 'poppins';
-    border-radius: 50px;
+    border-radius: 15px;
     color: white;
     font-weight: 500;
     width: fit-content;
@@ -139,7 +138,6 @@ body {
     top: 95%;
     left: 46%;
     display: flex;
-
 }
 .dots-container a {
     border-radius: 50%;
@@ -153,15 +151,58 @@ body {
     background-color: #4EADAD;
 }
 
-
-
-
-
-
-
+/* SERVICES SECTION */
+#services-section {
+    background-color: #262C2B;
+    padding-bottom: 10vh;
+}
+.services-title-container {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    margin-bottom: 6vh;
+}
+.services-title-container img {
+    width: 100px;
+    height: fit-content;
+    margin-right: 10%;
+}
+.services-container {
+    padding: 0 10%;
+}
+.service {
+    background-color: white;
+    width: 40%;
+    border-radius: 12px;
+    padding: 1px 20px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.service:nth-child(1) {
+    margin: 30px 60% 0 0;
+}
+.service:nth-child(2) {
+    margin: 30px 30% 0 30%;
+}
+.service:nth-child(3) {
+    margin: 30px 0 0 60%;
+}
+.service-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+.service-description {
+    font-size: 15px;
+    text-align: justify;
+    overflow: hidden;
+    height: 0;
+    transition: height 1s;
+}
+.show-service-description {
+    height: auto;
+}
 
 /* CONTACT SECTION */
-
 /* CONTACT FORM */
 #contact-form-container {
     width: 100%;
@@ -193,7 +234,7 @@ form button {
     padding: 8px 18px;
     font-size: 16px;
     font-family: 'poppins';
-    border-radius: 50px;
+    border-radius: 15px;
     color: white;
     font-weight: 600;
     width: fit-content;
@@ -239,6 +280,9 @@ form label {
 }
 #message {
     height: 180px;
+}
+#message::placeholder {
+    opacity: .5;
 }
 .infoMsg {
     font-size: 13px;

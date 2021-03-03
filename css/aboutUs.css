@@ -15,12 +15,12 @@ body {
     margin: 0;
 }
 .title-container span {
-    color: #586B48;
+    color: #4EADAD;
 }
 .title-container p {
     font-size: 13px;
     margin: 0;
-    color: #586B48;
+    color: #4EADAD;
 }
 .about-us-card-container {
     margin: 10vh 0 15vh 0;
@@ -46,6 +46,6 @@ body {
     padding: 5%;
 }
 .about-us-card span {
-    color: #586B48;
+    color: #4EADAD;
     font-weight: bold;
 }
