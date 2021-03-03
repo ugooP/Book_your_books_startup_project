@@ -6,25 +6,61 @@ body {
     padding: 0;
     font-family: 'poppins', sans-serif;
 }
-
-
-/* CONTACT SECTION */
-.contact-title-container {
+/* GENERIC */
+.title-container {
     margin-left: 10%;
-    margin-top: 5vh;
+    padding-top: 5vh;
 }
-.contact-title-container h2 {
+.title-container h2 {
     font-size: 30px;
     margin: 0;
 }
-.contact-title-container span {
+.title-container span {
     color: #586B48;
 }
-.contact-title-container p {
+.title-container p {
     font-size: 13px;
     margin: 0;
     color: #586B48;
 }
+
+
+
+
+
+/* ABOUT US SECTION */
+
+.about-us-card-container {
+    margin: 10vh 0 15vh 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.about-us-card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+}
+.about-us-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.about-us-card p {
+    width: 90%;
+    text-align: justify;
+    font-size: 14px;
+    padding: 5%;
+}
+.about-us-card span {
+    color: #586B48;
+    font-weight: bold;
+}
+
+
+
+/* CONTACT SECTION */
 
 /* CONTACT FORM */
 #contact-form-container {

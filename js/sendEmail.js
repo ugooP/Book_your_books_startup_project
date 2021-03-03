@@ -5,16 +5,42 @@ const infoMsg = document.querySelector('.infoMsg')
 
 document.querySelector('#send-mail-btn').addEventListener('click', (event) => {
     event.preventDefault()
-
+    
     // Get user inputs
     const params = {
-        fromName: document.querySelector('#nameInput').value,
-        fromMail: document.querySelector('#emailInput').value,
-        message: document.querySelector('#message').value
+        fromName: nameInput.value,
+        fromMail: mailInput.value,
+        message:  messageArea.value
+    }
+
+    // Set the recipient data
+    // 🚫 INSECURE 🚫 //
+    const secureToken = 'a4c7bbc3-5c29-4414-a618-772f1ed811f6'
+    const recipientMail = 'ugo.prenat@gmail.com'
+
+    if (isInputsValid(params)) {
+        infoMsg.innerHTML = ''
+
+        // Send the email
+        Email.send({
+            SecureToken: secureToken,
+            To: recipientMail,
+            From: recipientMail,
+            Subject: `${params.fromName} à un nouveau projet à vous proposer`,
+            Body: `${params.message} \n Répondre à ${params.fromName} : ${params.fromMail}`
+        })
+        .then((message) => {
+            console.log(message);
+            // Display success message and reset all inputs
+            successMsg('Email envoyé')
+            nameInput.value = ''
+            mailInput.value = ''
+            messageArea.value = ''
+        })
     }
 
     // Set the IDs
-    const SERVICE_ID = 'service_ybm82im'
+    /* const SERVICE_ID = 'service_ybm82im'
     const TEMPLATE_ID = 'template_bl9e5q7'
     const USER_ID = 'user_fKOFTHNVkZuzqNqHfz7Yw'
 
@@ -29,11 +55,11 @@ document.querySelector('#send-mail-btn').addEventListener('click', (event) => {
             mailInput.value = ''
             messageArea.value = ''
         })
-    }
+    } */
 })
 
 function isInputsValid(params) {
-    const emailRegexp = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
+    const emailRegexp = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,7})$/
 
     if (params.fromName.length < 3) {
         errorMsg('Nom prénom trop court')
@@ -56,9 +82,9 @@ function errorMsg(msg) {
 
 function successMsg(msg) {
     infoMsg.innerHTML = msg
-    infoMsg.style.color = 'green'
+    infoMsg.style.color = '#586B48'
     setTimeout(() => {
         infoMsg.innerHTML = ''
-    }, 5000)
+    }, 3000)
 }
 
