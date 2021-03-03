@@ -190,11 +190,10 @@ body {
 }
 .service {
     background-color: white;
-    width: 40%;
+    width: 38%;
     border-radius: 12px;
-    padding: 1px 20px;
+    padding: 1px 2%;
     cursor: pointer;
-    transition: all .3s;
 }
 .service:nth-child(1) {
     margin: 30px 60% 0 0;
@@ -212,13 +211,9 @@ body {
 .service-description {
     font-size: 15px;
     text-align: justify;
-    overflow: hidden;
-    height: 0;
-    transition: height 1s;
+    display: none;
 }
-.show-service-description {
-    height: auto;
-}
+/* CONTACT SECTION */
 .presentation{
     background-color: #262C2B;
     color: white;
@@ -226,7 +221,6 @@ body {
     flex-direction: column;
     width: 100%;
 
-/* CONTACT SECTION */
 }
 
 #Lorem1{
@@ -350,6 +344,9 @@ form label {
 /* OUR VALUES SECTION */
 
 /* OUR VALUES FORM */
+#values-section {
+    padding-bottom: 30vh;
+}
 
 .adaptabilite{
     background-color: #E5C163;
