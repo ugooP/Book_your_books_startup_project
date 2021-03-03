@@ -26,7 +26,7 @@ body {
 .title-container p {
     font-size: 13px;
     margin: 0;
-    color: #586B48;
+    color: #4EADAD;
 }
 
 /* HOME SECTION */
@@ -72,17 +72,20 @@ body {
 }
 .last-carousel-item img {
     width: 50%;
-    height: fit-content;
+
 }
 
 .carousel-item:nth-child(1) {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/illu3.jpg');
+    background-size: cover;
 }
 .carousel-item:nth-child(2) {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/illu2.jpg');
+    background-size: cover;
 }
 .carousel-item:nth-child(3) {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/illu1.jpg');
+    background-size: cover;
 }
 .carousel-item:nth-child(4) {
     background-color: white;
@@ -118,6 +121,20 @@ body {
     align-self: flex-end;
     cursor: pointer;
 }
+.carousel-item .btnTypeUn:hover {
+    background-color: transparent;
+    transition: 1s;
+}
+.carousel-item .btnTypeDeux:hover {
+    background-color: #4EADAD !important;
+    color: white !important;
+    transition: 1s;
+}
+.carousel-item .btnTypeTrois:hover {
+    background-color: transparent;
+    color: #4EADAD !important;
+    transition: 1s;
+}
 .carousel-item .btns a:last-of-type {
     background-color: transparent;
     margin-left: 10px;
@@ -139,8 +156,8 @@ body {
     top: 95%;
     left: 46%;
     display: flex;
-
 }
+
 .dots-container a {
     border-radius: 50%;
     cursor: pointer;
@@ -153,14 +170,46 @@ body {
     background-color: #4EADAD;
 }
 
+.presentation{
+    background-color: #262C2B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
+}
 
+#Lorem1{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.Txt1{
+    float: right;
+}
+#imgLorem1{
+    max-width: 20%;
+    max-height: 20%;
+}
 
+#Lorem2{
+    display: flex;
+    justify-content: space-between;
+}
+#imgLorem2{
+    max-width: 20%;
+    max-height: 20%;
+}
 
-
-
-
-/* CONTACT SECTION */
+#Lorem3{
+    display: flex;
+   
+    justify-content: space-between;
+}
+#imgLorem3{
+    max-width: 20%;
+    max-height: 20%;
+}
 
 /* CONTACT FORM */
 #contact-form-container {
