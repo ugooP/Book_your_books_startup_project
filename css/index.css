@@ -21,7 +21,7 @@ body {
     margin: 0;
 }
 .title-container span {
-    color: #586B48;
+    color: #4EADAD;
 }
 .title-container p {
     font-size: 13px;
@@ -53,7 +53,41 @@ body {
     justify-content: center;
     flex-direction: column;
     padding-left: 10%;
+    background-size: cover;
 }
+.last-carousel-item h1 {
+    color: black !important;
+}
+.last-carousel-item p {
+    color: #4EADAD !important;
+}
+.last-carousel-item a:last-of-type {
+    color: #4EADAD !important;
+}
+.last-carousel-item {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.last-carousel-item img {
+    width: 50%;
+    height: fit-content;
+}
+
+.carousel-item:nth-child(1) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/illu3.jpg');
+}
+.carousel-item:nth-child(2) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/illu2.jpg');
+}
+.carousel-item:nth-child(3) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/illu1.jpg');
+}
+.carousel-item:nth-child(4) {
+    background-color: white;
+}
+
 .carousel-item h1 {
     margin: 0;
     font-size: 50px;
@@ -153,7 +187,7 @@ form input, form textarea {
     resize: vertical;
 }
 form button {
-    background-color: #586B48;
+    background-color: #4EADAD;
     border: none;
     outline: none;
     padding: 8px 18px;
@@ -176,10 +210,10 @@ form label {
     padding: 0 3px;
     height: 16px;
     background-color: white;
-    color: #586B48;
+    color: #4EADAD;
 }
 .form-group {
-    border: 2px solid #586B48;
+    border: 2px solid #4EADAD;
     border-radius: 10px;
     margin-bottom: 20px;
 }

@@ -15,14 +15,15 @@ nextSlideBtn.addEventListener('click', () => {
             left: toScroll,
             behavior: 'smooth'
         })
+        updateActiveDot(index+1)
     } else {
         carousel.scroll({
             top: 0,
             left: 0,
             behavior: 'smooth'
         })
+        updateActiveDot(0)
     }
-
 })
 
 prevSlideBtn.addEventListener('click', () => {
@@ -36,12 +37,14 @@ prevSlideBtn.addEventListener('click', () => {
             left: toScroll,
             behavior: 'smooth'
         })
+        updateActiveDot(index-1)
     } else {
         carousel.scroll({
             top: 0,
             left: slides.length * slideWidth,
             behavior: 'smooth'
         })
+        updateActiveDot(slides.length-1)
     }
 })
 
@@ -55,7 +58,7 @@ function getActiveSlide() {
     }
 }
 
-function goToSlide(n) {
+function updateActiveDot(n) {
     // Remove the previous active dot
     for (let i = 0; i < dots.length; i++) {
         if (dots[i].classList.contains('active')) {
@@ -64,5 +67,5 @@ function goToSlide(n) {
         }
     }
 
-    dots[n-1].classList.add('active')
+    dots[n].classList.add('active')
 }
