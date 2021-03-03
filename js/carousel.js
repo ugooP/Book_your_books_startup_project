@@ -7,7 +7,7 @@ const prevSlideBtn = document.querySelector('.prev-slide')
 nextSlideBtn.addEventListener('click', () => {
     const slideWidth = carousel.getBoundingClientRect().width
     const index = getActiveSlide()
-    const toScroll = index == 0 ? slideWidth : (index + 1) * slideWidth
+    const toScroll = (index + 1) * slideWidth
 
     if (index < slides.length - 1) {
         carousel.scroll({
@@ -68,4 +68,15 @@ function updateActiveDot(n) {
     }
 
     dots[n].classList.add('active')
+}
+
+function goToSlide(n) {
+    const slideWidth = carousel.getBoundingClientRect().width
+
+    carousel.scroll({
+        top: 0,
+        left: n * slideWidth,
+        behavior: 'smooth'
+    })
+    updateActiveDot(n)
 }
