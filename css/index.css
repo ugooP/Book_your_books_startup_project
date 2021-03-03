@@ -244,3 +244,30 @@ form label {
     font-size: 13px;
     align-self: center;
 }
+
+/* OUR VALUES SECTION */
+
+/* OUR VALUES FORM */
+
+.adaptabilite{
+    background-color: #E5C163;
+    float: left;
+}
+
+.rigueur{
+    background-color: #2EC97F;
+}
+
+.bienveillance{
+    background-color: #38D2C9;
+    float: right;
+}
+
+.accompagnement{
+    background-color: #F3ECE7;
+    float: right;
+}
+
+.illu3{
+    float: left;
+}
