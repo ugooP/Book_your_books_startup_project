@@ -26,7 +26,7 @@ body {
 .title-container p {
     font-size: 13px;
     margin: 0;
-    color: #586B48;
+    color: #4EADAD;
 }
 
 /* HOME SECTION */
@@ -138,9 +138,9 @@ body {
     position: absolute;
     top: 95%;
     left: 46%;
-    display: flex;
 
 }
+
 .dots-container a {
     border-radius: 50%;
     cursor: pointer;
@@ -153,14 +153,45 @@ body {
     background-color: #4EADAD;
 }
 
+.presentation{
+    background-color: #262C2B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
+}
 
+#Lorem1{
+    display: flex;
+    
+    justify-content: space-between;
+    
+}
+#imgLorem1{
+    max-width: 20%;
+    max-height: 20%;
+}
 
+#Lorem2{
+    display: flex;
+    
+    justify-content: space-between;
+}
+#imgLorem2{
+    max-width: 20%;
+    max-height: 20%;
+}
 
-
-
-
-/* CONTACT SECTION */
+#Lorem3{
+    display: flex;
+   
+    justify-content: space-between;
+}
+#imgLorem3{
+    max-width: 20%;
+    max-height: 20%;
+}
 
 /* CONTACT FORM */
 #contact-form-container {
