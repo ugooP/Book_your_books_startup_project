@@ -13,4 +13,17 @@ setInterval(() => {
     if (window.scrollY < 100) {
         btn.style.display = 'none'
     }
+    // If user scroll to bottom of the page, don't let the btn go over the footer
+    const windowBottom = Math.round(document.querySelector('body').getBoundingClientRect().bottom)
+    const viewportHeight = $(window).height()
+    const footerHeight = document.querySelector('footer').getBoundingClientRect().height
+
+    if (windowBottom < (viewportHeight + footerHeight)) {
+        btn.style.position = 'absolute'
+        btn.style.bottom = '-2690px'
+    } else {
+        btn.style.position = 'fixed'
+        btn.style.bottom = '30px'
+    }
+    
 })
