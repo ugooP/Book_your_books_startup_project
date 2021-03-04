@@ -386,7 +386,7 @@ form input, form textarea {
 }
 form button {
     background-color: #4EADAD;
-    border: none;
+    border: 2px solid #4EADAD;
     outline: none;
     padding: 8px 18px;
     font-size: 16px;
@@ -397,6 +397,12 @@ form button {
     width: fit-content;
     align-self: flex-end;
     cursor: pointer;
+}
+form button:hover{
+    background-color: transparent;
+    color: #4EADAD !important;
+    
+    transition: 1s;
 }
 form label {
     position: absolute;
