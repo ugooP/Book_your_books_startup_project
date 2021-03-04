@@ -1,0 +1,85 @@
+.values-section {
+    padding: 0 0 0 36px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .box1 {
+    padding: 64px 14px 121px 23px;
+    position: relative;
+    background-color: #E5C163;
+    opacity: 82%;
+  }
+  .adaptabilite {
+    width: 164px;
+    text-align: justify;
+    position: absolute;
+    left: 23px;
+    top: 9px;
+  }
+  .text-adaptabilite {
+    width: 379px;
+    text-align: justify;
+    position: relative;
+  }
+  .architecture-1048092-1920-1 {
+    margin-top: 3px;
+  }
+  .box2 {
+    padding: 100px 20px 111px 26px;
+    position: relative;
+    background-color: #F3ECE7;
+  }
+  .accompagnement {
+    width: 246px;
+    text-align: justify;
+    position: absolute;
+    left: 26px;
+    top: 9px;
+  }
+  .text-accompagnement {
+    width: 500px;
+    text-align: justify;
+    position: relative;
+  }
+  .flex-wrapper-twenty-three {
+    margin-bottom: 72px;
+    padding: 0 0 0 36px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .box3{
+    padding: 170px 38px 42px 13px;
+    position: relative;
+    background-color: #2EC97F;
+    opacity: 67%;
+  }
+  .text-bienveillance {
+    width: 357px;
+    text-align: justify;
+    position: relative;
+  }
+  .rigueur {
+    width: 103px;
+    text-align: justify;
+    position: absolute;
+    left: 13px;
+    top: 17px;
+  }
+  .box4 {
+    padding: 93px 20px 95px 28px;
+    position: relative;
+    background-color: #4EADAD;
+    opacity: 62%;
+  }
+  .bienveillance {
+    width: 177px;
+    text-align: justify;
+    position: absolute;
+    left: 26px;
+    top: 0;
+  }
+  .text-rigueur {
+    width: 498px;
+    text-align: justify;
+    position: relative;
+  }
