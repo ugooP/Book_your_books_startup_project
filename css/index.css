@@ -223,7 +223,6 @@ body {
 }
 .services-title-container img {
     width: 100px;
-    height: fit-content;
     margin-right: 10%;
 }
 .services-container {
@@ -308,6 +307,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 45%;
+    max-width: 850px;
 }
 #contact-form {
     position: relative;

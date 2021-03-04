@@ -6,8 +6,9 @@ footer {
     justify-content: space-between;
     height: 150px;
 }
-footer .logo_fpi {
-    height: 100%;
+footer img {
+    height: 60%;
+    margin-left: 3%;
 }
 footer a {
     text-decoration: none;
