@@ -254,46 +254,110 @@ body {
     text-align: justify;
     display: none;
 }
-/* CONTACT SECTION */
+/* Présentation */
 .presentation{
     background-color: #262C2B;
     color: white;
     display: flex;
     flex-direction: column;
     width: 100%;
-
+    
 }
 
 #Lorem1{
     display: flex;
     justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 5%;
     
 }
+#soustxt1{
+    color:  #4EADAD;
+}
+.Titre1{
+    font-weight: bold;
+    font-size: 250%;
+}
 .Txt1{
+    margin-left: 5%;
     float: right;
+    width: 75%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
 }
 #imgLorem1{
     max-width: 20%;
     max-height: 20%;
 }
+#Motbleu1 {
+    color:  #4EADAD;
+}
 
 #Lorem2{
     display: flex;
     justify-content: space-between;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.Titre2{
+    font-size: 250%;
+    font-weight: bold;
+}
+.Txt2{
+    margin-left: 5%;
+    float: right;
+    width: 75%;
+    align-items: flex-end;
+    flex-direction: column;
+}
+#soustxt2{
+    color:  #4EADAD;
 }
 #imgLorem2{
     max-width: 20%;
     max-height: 20%;
 }
+#Motbleu2 {
+    color:  #4EADAD;
+}
 
 #Lorem3{
     display: flex;
-   
+    margin-left: 5%;
+    margin-right: 10%;
     justify-content: space-between;
+    margin-bottom: 5%;
+    text-align: right;
+}
+#soustxt3{
+    color:  #4EADAD;
+}
+.Titre3{
+    font-size: 250%;
+    font-weight: bold;
+}
+.Txt3{
+    margin-left: 5%;
+    float: right;
+    width: 75%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    
 }
 #imgLorem3{
     max-width: 20%;
     max-height: 20%;
+}
+#Motbleu3 {
+    color:  #4EADAD;
 }
 
 /* CONTACT FORM */
