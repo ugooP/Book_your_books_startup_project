@@ -24,3 +24,17 @@ footer .copyrights p {
     text-align: right;
     font-size: 13px;
 }
+footer ul {
+    margin: 0;
+    list-style: none;
+}
+footer .sitePlanTitle {
+    margin: 0;
+    margin-bottom: 5%;
+    text-decoration: underline;
+}
+footer .sitePlan{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
