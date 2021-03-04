@@ -43,6 +43,7 @@ body {
     padding: 10px;
     cursor: pointer;
     overflow: hidden;
+    /* transition: bottom .3s; */
 }
 .back-to-top-btn img {
     width: 25px;
