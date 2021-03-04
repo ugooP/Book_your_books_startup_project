@@ -20,10 +20,9 @@ setInterval(() => {
 
     if (windowBottom < (viewportHeight + footerHeight)) {
         btn.style.position = 'absolute'
-        btn.style.bottom = '-2690px'
+        btn.style.bottom = `${(footerHeight + 30).toString()}px`
     } else {
         btn.style.position = 'fixed'
         btn.style.bottom = '30px'
     }
-    
 })
