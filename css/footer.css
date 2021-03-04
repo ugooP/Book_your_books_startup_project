@@ -6,8 +6,9 @@ footer {
     justify-content: space-between;
     height: 150px;
 }
-footer .logo_fpi {
-    height: 100%;
+footer img {
+    height: 60%;
+    margin-left: 3%;
 }
 footer a {
     text-decoration: none;
@@ -22,4 +23,18 @@ footer .copyrights {
 footer .copyrights p {
     text-align: right;
     font-size: 13px;
+}
+footer ul {
+    margin: 0;
+    list-style: none;
+}
+footer .sitePlanTitle {
+    margin: 0;
+    margin-bottom: 5%;
+    text-decoration: underline;
+}
+footer .sitePlan{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }

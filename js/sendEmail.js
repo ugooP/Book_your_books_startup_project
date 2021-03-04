@@ -82,7 +82,7 @@ function errorMsg(msg) {
 
 function successMsg(msg) {
     infoMsg.innerHTML = msg
-    infoMsg.style.color = '#586B48'
+    infoMsg.style.color = 'green'
     setTimeout(() => {
         infoMsg.innerHTML = ''
     }, 3000)
